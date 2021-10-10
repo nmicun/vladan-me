@@ -1,5 +1,12 @@
 <template>
   <div>
+    <SocialHead
+      :title="'Vladan Mihailovic'"
+      :description="'Profesor sporta i fizicke kulture. Personalni trener. Spremanje sportista i rekreativaca'"
+      :image="'https://vladan.me/glavnaslika.jpg'"
+    />
+   
+
     <b-container fluid style="padding:0px">
             <b-row>
      <b-col cols="2" class="testa d-none d-lg-block" style="width:100%; padding:0px">
@@ -74,11 +81,9 @@
 </b-col>
   </b-row>
     </b-container>
+      <Menifooter/>
   
   
-  
-  
-  <Menifooter/>
   </div>
 </template>
 
