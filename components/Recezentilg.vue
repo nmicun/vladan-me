@@ -10,7 +10,7 @@
       <b-row>
        <b-col cols="12" md="4">
         
-  <b-card class="text-center h-100" bg-variant="light">
+  <b-card class="text-center h-100 kartica" bg-variant="light">
           <b-row align-h="center"><b-avatar center src="/recezenti/nikoleta.png" alt="Nikoleta Perovic odbojkasica" size="4em"/> 
           </b-row>
           <b-row align-h="center">       <h6 class="rec-ime-txt">Nikoleta Perović</h6>
@@ -22,7 +22,7 @@
         </b-card>
        </b-col>
      <b-col cols="12" md="4">
-      <b-card class="text-center h-100" bg-variant="light">
+      <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/tanja.png" alt="Tanja Bokan odbojkasica" size="4em"/> 
        </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Tanja Bokan</h6>
@@ -35,7 +35,7 @@
   </b-col>
      <b-col cols="12" md="4">
     
-     <b-card class="text-center h-100" bg-variant="light">
+     <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/nevena.png" alt="Nevena Vukčević odbojkasica" size="4em"/> 
        </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Nevena Vukčević</h6>
@@ -55,7 +55,7 @@
       <b-row>
        <b-col cols="12" md="4">
         
-  <b-card class=" text-center h-100" bg-variant="light">
+  <b-card class=" text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/marstjepovic.png" alt="Mladen Marstjepović fudbal" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Mladen Marstjepović</h6>
@@ -68,7 +68,7 @@
         </b-card>
        </b-col>
      <b-col cols="12" md="4">
-       <b-card class="h-100 text-center" bg-variant="light">
+       <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/judza.png" alt="Yulia Malygina rekreativac" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Yulia Malygina</h6>
@@ -82,7 +82,7 @@
   </b-col>
      <b-col cols="12" md="4">
     
-     <b-card class="h-100 text-center" bg-variant="light">
+     <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/izabela.png" alt="Izabela Medunjanin" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Izabela Medunjanin</h6>
@@ -104,7 +104,7 @@
       <b-row>
        <b-col cols="12" md="4">
         
- <b-card class="text-center h-100" bg-variant="light">
+ <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/djokovic.png" alt="Balša Đoković teniser" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Balša Đoković</h6>
@@ -117,7 +117,7 @@
         </b-card>
        </b-col>
      <b-col cols="12" md="4">
-      <b-card class="h-100 text-center" bg-variant="light">
+      <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/avramovic.png" alt="Nikola Avramović rukometaš" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Nikola Avramović</h6>
@@ -131,7 +131,7 @@
   </b-col>
      <b-col cols="12" md="4">
     
-     <b-card class="h-100 text-center" bg-variant="light">
+     <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/andrej.png" alt="Andrej Račić" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Andrej Račić</h6>
@@ -160,7 +160,10 @@ export default {
 
 <style>
 .kartica {
-    background-color: #3077be;}
+    background-color: #3077be;
+     max-height: 400px !important;
+     min-height: 400px !important;
+       overflow-y: auto;}
 
 .rec-ime-txt {
   font-weight: bold;
@@ -169,5 +172,6 @@ export default {
 .rec-sport-txt {
   font-style: italic;
 }
+
 
 </style>

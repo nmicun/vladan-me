@@ -2,7 +2,7 @@
   <div class="footer-menu d-lg-none">
 <b-container fluid >
      <b-row style="background-color:white;">
-    <b-col v-b-modal.modal-sportisti cols="3" class="text-center column-btn"  ><span style="color:black; font-size:20px; margin-bottom:2px!important; ">
+    <b-col v-b-modal.modal-sportisti cols="3" class="text-center column-btn"><span style="color:black; font-size:20px; margin-bottom:2px!important; ">
        <a class="footer-span" style="color:black" href="#"> 
        <font-awesome-icon :icon="['fas','volleyball-ball']"/>
        <p class="naslovi-btn">Profesionalni sportisti</p>
@@ -46,6 +46,9 @@ export default {
 .footer-span:hover {
 color: rgb(255, 255, 255)!important;
 text-decoration: unset;
+}
+.column-btn {
+  border: 1px solid black;
 }
 .column-btn:hover {
   background-color:rgb(80, 184, 245);

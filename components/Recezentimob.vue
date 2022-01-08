@@ -1,16 +1,16 @@
 <template>
-  <div class="d-lg-none">
-  <b-container style="padding:30px; margin-bottom:50px">  
+  <div class="d-lg-none" style="height:100px important!">
+  <b-container style="padding:30px; margin-bottom:50px;">  
       
   
     
-  <b-carousel  :interval="3500" >
-  <b-carousel-slide>
+  <b-carousel  :interval="4000">
+  <b-carousel-slide >
      <template v-slot:img>
       
        
         
-  <b-card class="text-center h-100" bg-variant="light">
+  <b-card class="text-center h-100 kartica" bg-variant="light">
           <b-row align-h="center"><b-avatar center src="/recezenti/nikoleta.png" alt="Nikoleta Perovic odbojkasica" size="4em"/> 
           </b-row>
           <b-row align-h="center">       <h6 class="rec-ime-txt">Nikoleta Perović</h6>
@@ -24,7 +24,7 @@
    </b-carousel-slide>
 <b-carousel-slide>
      <template v-slot:img>
-      <b-card class="text-center h-100" bg-variant="light">
+      <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/tanja.png" alt="Tanja Bokan odbojkasica" size="4em"/> 
        </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Tanja Bokan</h6>
@@ -38,7 +38,7 @@
    </b-carousel-slide>
     <b-carousel-slide>
      <template v-slot:img>
-     <b-card class="text-center h-100" bg-variant="light">
+     <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/nevena.png" alt="Nevena Vukčević odbojkasica" size="4em"/> 
        </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Nevena Vukčević</h6>
@@ -54,7 +54,7 @@
 
    <b-carousel-slide>
      <template v-slot:img>
-  <b-card class=" text-center h-100" bg-variant="light">
+  <b-card class=" text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/marstjepovic.png" alt="Mladen Marstjepović fudbal" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Mladen Marstjepović</h6>
@@ -69,7 +69,7 @@
    </b-carousel-slide>
 <b-carousel-slide>
      <template v-slot:img>
-       <b-card class="h-100 text-center" bg-variant="light">
+       <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/judza.png" alt="Yulia Malygina rekreativac" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Yulia Malygina</h6>
@@ -84,7 +84,7 @@
    </b-carousel-slide>
     <b-carousel-slide>
      <template v-slot:img>
-     <b-card class="h-100 text-center" bg-variant="light">
+     <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/izabela.png" alt="Izabela Medunjanin" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Izabela Medunjanin</h6>
@@ -102,7 +102,7 @@
      <template v-slot:img>
      
         
- <b-card class="text-center h-100" bg-variant="light">
+ <b-card class="text-center h-100 kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/djokovic.png" alt="Balša Đoković teniser" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Balša Đoković</h6>
@@ -117,7 +117,7 @@
    </b-carousel-slide>
         <b-carousel-slide>
      <template v-slot:img>
-      <b-card class="h-100 text-center" bg-variant="light">
+      <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/avramovic.png" alt="Nikola Avramović rukometaš" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Nikola Avramović</h6>
@@ -132,7 +132,7 @@
    </b-carousel-slide>
     <b-carousel-slide>
      <template v-slot:img>
-     <b-card class="h-100 text-center" bg-variant="light">
+     <b-card class="h-100 text-center kartica" bg-variant="light">
        <b-row align-h="center"><b-avatar center src="/recezenti/andrej.png" alt="Andrej Račić" size="4em"/> 
 </b-row>
        <b-row align-h="center">       <h6 class="rec-ime-txt">Andrej Račić</h6>
@@ -159,5 +159,18 @@ export default {
 </script>
 
 <style>
+.kartica {
+    background-color: #3077be;
+    max-height: 400px !important;
+    min-height: 400px;
+    overflow-y: auto;}
+
+.rec-ime-txt {
+  font-weight: bold;
+}
+
+.rec-sport-txt {
+  font-style: italic;
+}
 
 </style>
